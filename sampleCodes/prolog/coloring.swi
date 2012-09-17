@@ -1,0 +1,28 @@
+% 所謂地図の塗り分け問題
+% 『7つの言語 7つの世界』/ Bruce A. Tateの同様の問題を4色、近畿圏に書き換えたもの
+
+% red, yellow, blue, greenの異なる4色で塗り分ける
+% . は全て「かつ」と脳内で読み替えると分かりやすい
+different(red, yellow). different(red, blue). different(red, green).
+different(yellow, red). different(yellow, blue). different(yellow, green).
+different(blue, red). different(blue, yellow). different(blue, green).
+different(green, red). different(green, yellow). different(green, blue).
+
+% coloringを以下のように定義する
+% ただ隣接関係を列挙してるだけ
+coloring(Shiga, Kyoto, Osaka, Hyogo, Nara, Wakayama, Mie) :-
+	different(Shiga, Kyoto), different(Shiga, Nara),
+	different(Shiga, Mie),
+	different(Kyoto, Shiga), different(Kyoto, Osaka),
+	different(Kyoto, Hyogo), different(Kyoto, Nara),
+	different(Kyoto, Mie),
+	different(Osaka, Kyoto), different(Osaka, Hyogo),
+	different(Osaka, Nara), different(Osaka, Wakayama),
+	different(Hyogo, Kyoto), different(Hyogo, Osaka),
+	different(Nara, Kyoto), different(Nara, Osaka),
+	different(Nara, Wakayama), different(Nara, Mie),
+	different(Wakayama, Osaka), different(Wakayama, Nara),
+	different(Wakayama, Mie),
+	different(Mie, Shiga), different(Mie, Kyoto),
+	different(Mie, Nara), different(Mie, Wakayama).
+
