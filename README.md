@@ -11,7 +11,7 @@ markdown\_sliderをインストールされましたら、`make`コマンドに�
 
 尚、生成済みの資料は以下になります。
 
-<http://tasuten.github.com/docs/kc3_2012/presen.html>
+<http://tasuten.github.io/docs/kc3_2012/presen.html>
 
 
 ライセンス
