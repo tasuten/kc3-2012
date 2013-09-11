@@ -1,6 +1,6 @@
 概要
 ====
-[2012年度の関西情報系学生団体交流会](http://kc3.me/archives/193 "KC3@2012終了！ | 関西情報系学生団体交流会 Webサイト")にて、
+[2012年度の関西情報系学生団体交流会](http://2012.kc3.me/archives/193 "KC3@2012終了！ | 関西情報系学生団体交流会 Webサイト")にて、
 私が行った「プログラミング言語俯瞰」という勉強会において使用した資料となります。
 
 この資料は、Markdownで書かれたものを[massat/markdown_slider](https://github.com/massat/markdown_slider "massat/markdown_slider")によってHTML形式のスライドに変換して閲覧することを前提として作られています。
